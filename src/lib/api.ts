@@ -104,3 +104,41 @@ export const getComplianceBadge = async (websiteId: string) => {
   const response = await api.get(`/websites/${websiteId}/badge`);
   return response.data;
 };
+
+// Security features
+export const getSecurityRecommendations = async (userId: string) => {
+  const response = await api.get(`/websites/security/recommendations/${userId}`);
+  return response.data;
+};
+
+export const getSecurityTips = async () => {
+  const response = await api.get('/websites/security/tips');
+  return response.data;
+};
+
+export const updateSecurityRecommendation = async (recommendationId: string, status: string) => {
+  const response = await api.put(`/websites/security/recommendations/${recommendationId}`, { status });
+  return response.data;
+};
+
+// Route discovery
+export const discoverRoutes = async (url: string) => {
+  const response = await api.post('/websites/discover-routes', { url });
+  return response.data;
+};
+
+export const getWebsiteRoutes = async (websiteId: string) => {
+  const response = await api.get(`/websites/${websiteId}/routes`);
+  return response.data;
+};
+
+// Chatbot
+export const chatbotQuery = async (data: { query: string; context?: any; userId?: string }) => {
+  const response = await api.post('/websites/chatbot/query', data);
+  return response.data;
+};
+
+export const getChatbotHistory = async (userId: string) => {
+  const response = await api.get(`/websites/chatbot/history/${userId}`);
+  return response.data;
+};

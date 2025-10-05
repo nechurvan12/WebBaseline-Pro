@@ -9,6 +9,12 @@ import Dashboard from './pages/Dashboard';
 import Analyze from './pages/Analyze';
 import Reports from './pages/Reports';
 import Notifications from './pages/Notifications';
+import SecurityCenter from './pages/SecurityCenter';
+import BaselineChatbot from './pages/BaselineChatbot';
+import RouteExplorer from './pages/RouteExplorer';
+import Profile from './pages/Profile';
+import Comparison from './pages/Comparison';
+import Performance from './pages/Performance';
 
 const PrivateRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user, loading } = useAuth();
@@ -92,6 +98,66 @@ function App() {
                 <PrivateRoute>
                   <Layout>
                     <Notifications />
+                  </Layout>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/security"
+              element={
+                <PrivateRoute>
+                  <Layout>
+                    <SecurityCenter />
+                  </Layout>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/chatbot"
+              element={
+                <PrivateRoute>
+                  <Layout>
+                    <BaselineChatbot />
+                  </Layout>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/routes"
+              element={
+                <PrivateRoute>
+                  <Layout>
+                    <RouteExplorer />
+                  </Layout>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/profile"
+              element={
+                <PrivateRoute>
+                  <Layout>
+                    <Profile />
+                  </Layout>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/comparison"
+              element={
+                <PrivateRoute>
+                  <Layout>
+                    <Comparison />
+                  </Layout>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/performance"
+              element={
+                <PrivateRoute>
+                  <Layout>
+                    <Performance />
                   </Layout>
                 </PrivateRoute>
               }
