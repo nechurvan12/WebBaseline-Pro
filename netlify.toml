@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
+  command = "mkdir -p dist && npm run build"
   publish = "dist"
+
 
 # 🔀 Redirects
 [[redirects]]
