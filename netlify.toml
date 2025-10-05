@@ -1,9 +1,8 @@
 [build]
-  command = "mkdir -p dist && npm run build"
+  base = ""
+  command = "npm run build"
   publish = "dist"
 
-
-# 🔀 Redirects
 [[redirects]]
   from = "/*"
   to = "/index.html"
