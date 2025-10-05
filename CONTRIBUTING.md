@@ -1,12 +1,21 @@
 # Contributing to WebBaseline Pro
 
-👋 First off, thanks for taking the time to contribute! We're excited to welcome you to the WebBaseline Pro community.
+👋 **Welcome to the WebBaseline Pro Community!**
+
+Thank you for your interest in contributing to WebBaseline Pro - a production-ready web analysis platform built on Google's official Baseline standards. We're excited to have you join our community of developers, designers, and enthusiasts working to make the web a better place.
 
 ## 🚀 Getting Started
 
+### 🍴 Fork & Clone
+
 1. **Fork the Repository**
    ```bash
-   # Clone your fork
+   # Fork using GitHub UI or CLI
+   gh repo fork daxp472/WebBaseline-Pro
+   ```
+
+2. **Clone Your Fork**
+   ```bash
    git clone https://github.com/your-username/WebBaseline-Pro.git
    cd WebBaseline-Pro
    
@@ -14,9 +23,9 @@
    git remote add upstream https://github.com/daxp472/WebBaseline-Pro.git
    ```
 
-2. **Set Up Development Environment**
+3. **Set Up Development Environment**
 
-   Frontend Setup:
+   **Frontend Setup:**
    ```bash
    # Install dependencies
    npm install
@@ -28,7 +37,7 @@
    npm run dev
    ```
 
-   Backend Setup:
+   **Backend Setup:**
    ```bash
    cd server
    npm install
@@ -38,26 +47,35 @@
 
 ## 🧩 Contribution Workflow
 
+### 🌿 Branch Strategy
+
+We follow the Git Feature Branch Workflow:
+
 1. **Create a New Branch**
    ```bash
+   # For features
    git checkout -b feature/your-feature-name
-   # or
+   
+   # For bug fixes
    git checkout -b fix/your-bug-fix
+   
+   # For documentation
+   git checkout -b docs/your-documentation-update
    ```
 
 2. **Make Your Changes**
-   - Follow the project structure
-   - Write clean, documented code
-   - Add tests if applicable
+   - Follow the existing project structure
+   - Write clean, well-documented code
+   - Add tests where applicable
    - Update documentation if needed
 
 3. **Commit Your Changes**
    ```bash
    git add .
-   git commit -m "type: brief description"
+   git commit -m "type(scope): brief description"
    ```
    
-   Commit message types:
+   **Commit Message Types:**
    - `feat:` - New feature
    - `fix:` - Bug fix
    - `docs:` - Documentation changes
@@ -65,72 +83,207 @@
    - `refactor:` - Code restructuring
    - `test:` - Adding tests
    - `chore:` - Maintenance tasks
+   - `perf:` - Performance improvements
+   - `ci:` - CI/CD related changes
 
 4. **Submit Pull Request**
-   - Push to your fork
-   - Create PR to the `dev` branch
-   - Fill out the PR template
+   - Push to your fork: `git push origin branch-name`
+   - Create PR to the `main` branch
+   - Fill out the PR template completely
    - Wait for review and address feedback
 
-## 🧠 Code Style
+## 🧠 Code Style & Standards
 
-### General Guidelines
-- Use TypeScript for new code
-- Follow existing patterns in the codebase
-- Write self-documenting code with clear variable names
-- Add comments for complex logic
+### 🎨 General Guidelines
 
-### Naming Conventions
-- **Components:** PascalCase (`UserProfile.tsx`)
-- **Files:** camelCase (`authUtils.ts`)
-- **Functions:** camelCase (`getUserData()`)
-- **Constants:** UPPER_SNAKE_CASE (`MAX_RETRY_ATTEMPTS`)
-- **Variables:** camelCase (`userCount`)
+- **Type Safety**: Use TypeScript for all new code
+- **Consistency**: Follow existing patterns in the codebase
+- **Readability**: Write self-documenting code with clear variable names
+- **Documentation**: Add comments for complex logic and public APIs
+- **Performance**: Consider performance implications of your changes
 
-### Formatting
-- Use 2 spaces for indentation
-- Add trailing commas in arrays/objects
-- Keep lines under 80 characters
-- Use semicolons consistently
+### 🏷️ Naming Conventions
 
-## 🧪 Testing
+- **Components**: PascalCase (`UserProfile.tsx`)
+- **Files**: camelCase (`authUtils.ts`) or PascalCase for components
+- **Functions**: camelCase (`getUserData()`)
+- **Constants**: UPPER_SNAKE_CASE (`MAX_RETRY_ATTEMPTS`)
+- **Variables**: camelCase (`userCount`)
+- **Interfaces**: PascalCase with `I` prefix (`IUser`, `IAnalysisResult`)
 
-Before submitting your PR:
+### 📐 Formatting Standards
 
-1. **Run Tests**
+- **Indentation**: 2 spaces (no tabs)
+- **Line Length**: Keep lines under 100 characters
+- **Semicolons**: Use semicolons consistently
+- **Trailing Commas**: Add trailing commas in arrays/objects
+- **Quotes**: Use single quotes (`'`) for strings
+
+### 🧪 Testing Requirements
+
+- **Unit Tests**: Write tests for new functionality
+- **Integration Tests**: Test API endpoints and services
+- **E2E Tests**: For critical user flows
+- **Test Coverage**: Aim for >80% test coverage for new features
+
+## 🧪 Testing Guidelines
+
+Before submitting your PR, ensure all tests pass:
+
+1. **Run Frontend Tests**
    ```bash
-   # Frontend tests
    npm run test
-   
-   # Backend tests
-   cd server && npm run test
+   npm run test:coverage
    ```
 
-2. **Manual Testing**
-   - Test your changes in development
+2. **Run Backend Tests**
+   ```bash
+   cd server
+   npm run test
+   npm run test:coverage
+   ```
+
+3. **Manual Testing**
+   - Test your changes in development environment
    - Verify mobile responsiveness
-   - Check browser compatibility
-   - Ensure no console errors
+   - Check cross-browser compatibility
+   - Ensure no console errors or warnings
+   - Test accessibility features
 
 ## 📝 Creating Issues
 
-### Bug Reports
-- Use the bug report template
-- Include steps to reproduce
-- Specify expected vs actual behavior
-- Add screenshots if relevant
-- List environment details
+### 🐛 Bug Reports
 
-### Feature Requests
-- Use the feature request template
-- Explain the use case
-- Describe expected behavior
-- Add mockups if possible
+Use the bug report template and include:
 
-## 🙌 Acknowledgements
+- **Clear title** describing the issue
+- **Steps to reproduce** with specific details
+- **Expected vs actual behavior**
+- **Environment details** (browser, OS, version)
+- **Screenshots or videos** if relevant
+- **Console errors** or logs
 
-We appreciate all contributors who help improve WebBaseline Pro! Check out our [contributors page](https://github.com/daxp472/WebBaseline-Pro/graphs/contributors) to see all the awesome people who have contributed to this project.
+### 💡 Feature Requests
+
+Use the feature request template and include:
+
+- **Clear description** of the feature
+- **Use case** and problem it solves
+- **Expected behavior** with examples
+- **Mockups or diagrams** if UI changes
+- **Technical considerations** if any
+
+### 🔧 Enhancement Requests
+
+For improvements to existing features:
+
+- **Current limitations** you've identified
+- **Proposed solution** with technical details
+- **Impact assessment** on users and performance
+- **Implementation approach** suggestions
+
+## 🛠 Development Tools & Setup
+
+### 📦 Required Tools
+
+- **Node.js** 18+ (LTS recommended)
+- **npm** 8+ or **yarn** 1.22+
+- **Git** 2.30+
+- **VS Code** (recommended editor)
+
+### 🔧 Recommended VS Code Extensions
+
+- **ESLint** for code linting
+- **Prettier** for code formatting
+- **TypeScript Importer** for imports
+- **GitLens** for Git integration
+- **Auto Rename Tag** for HTML tags
+
+### 🧪 Debugging Setup
+
+- **Frontend**: React DevTools, Redux DevTools
+- **Backend**: Node.js debugger, Postman for API testing
+- **Database**: Supabase dashboard for data inspection
+
+## 📋 Code Review Process
+
+### 🎯 Review Criteria
+
+All pull requests are reviewed based on:
+
+1. **Functionality**: Does it work as expected?
+2. **Code Quality**: Is it well-written and maintainable?
+3. **Performance**: Any performance implications?
+4. **Security**: Any security vulnerabilities?
+5. **Testing**: Are tests comprehensive and passing?
+6. **Documentation**: Is it properly documented?
+
+### ⏱ Review Timeline
+
+- **Standard PRs**: 2-3 business days
+- **Urgent fixes**: Within 24 hours
+- **Large features**: May take 5-7 business days
+
+### 🔄 Review Process
+
+1. Automated checks (CI/CD) run on all PRs
+2. At least one core maintainer reviews the code
+3. Feedback provided with specific suggestions
+4. Author addresses feedback and requests re-review
+5. PR merged after approval and passing checks
+
+## 🎉 Recognition & Community
+
+### 🏆 Contributor Recognition
+
+We value all contributions and recognize contributors through:
+
+- **GitHub Contributors Page**
+- **Monthly Contributor Spotlight**
+- **Hackathon Participation Opportunities**
+- **Swag Rewards** for significant contributions
+
+### 🤝 Community Engagement
+
+- Join our [Discord Community](link-to-discord) for real-time discussions
+- Participate in monthly community calls
+- Share your projects built with WebBaseline Pro
+- Mentor new contributors
+
+## 🙌 Code of Conduct
+
+All contributors are expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md) which promotes:
+
+- **Respect** for all community members
+- **Inclusivity** and diverse perspectives
+- **Constructive feedback** and collaboration
+- **Professional communication** standards
+
+## 📞 Getting Help
+
+### 🆘 Need Assistance?
+
+- **GitHub Discussions**: For general questions and community support
+- **Issues**: For bug reports and feature requests
+- **Documentation**: Check existing docs before asking
+- **Stack Overflow**: Tag questions with `webbaseline-pro`
+
+### 🎓 Learning Resources
+
+- **Project Wiki**: Detailed technical documentation
+- **API Reference**: Complete API documentation
+- **Video Tutorials**: Getting started guides
+- **Sample Projects**: Example implementations
 
 ---
 
-Remember: We aim to maintain a positive and inclusive environment. Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) in all your interactions with the project.
+## 🚀 Ready to Contribute?
+
+1. **Read the docs** - Familiarize yourself with the project
+2. **Pick an issue** - Start with `good first issue` or `help wanted`
+3. **Ask questions** - Don't hesitate to reach out for clarification
+4. **Submit your PR** - We're excited to see your contributions!
+
+> **Remember**: Every contribution, no matter how small, makes a difference. Thank you for helping make WebBaseline Pro better for everyone!
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
